@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(224, 250, 240);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  background-image: url('/assets/img/trip3.JPG');
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.jumbotron h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #0076ff;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  margin-top: 20px;
+}
+
+.jumbotron p {
+  font-size: 25px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar a:hover {
+  font-weight: bold;
+  color: blue;
+}
+
+.klik-menu {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.klik-menu input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -5.8px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.klik-menu span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.6s;
+}
+
+.container-mid {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.our-service,
+#perkenalan h2,
+.kontak-kami h2 {
+  max-width: 900px;
+  text-align: center;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#perkenalan h2 {
+  color: #0076ff;
+}
+
+#perkenalan p {
+  max-width: 900px;
+  color: black;
+  text-align: justify;
+  margin: 10px auto;
+  padding-bottom: 50px;
+}
+
+#kontak {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.kontak-kami p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.container-mid h3:hover {
+  color: #0076ff;
+  cursor: default;
+}
+
+.content {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.content.pertama,
+.content.kedua,
+.content.ketiga,
+.content.keempat,
+.content.kelima,
+.content.keenam {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.content.pertama img,
+.content.kedua img,
+.content.ketiga img,
+.content.keempat img,
+.content.kelima img,
+.content.keenam img {
+  width: 100px;
+  margin: 20px 60px 10px 60px;
+}
+
+.container-side {
+  max-width: 900px;
+  margin: 30px auto;
+  color: black;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.kontak-kami {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.kontak-kami form fieldset {
+  border: none;
+}
+
+.kontak-kami h2,
+#layanan h2 {
+  color: #0076ff;
+}
+
+.kontak-kami ul {
+  margin-left: 300px;
+}
+
+#email {
+  margin-left: 70px;
+}
+
+#komentar {
+  margin-left: 67px;
+}
+
+.kontak-kami h1 form fieldset legend {
+  font-weight: bold;
+}
+
+.kontak-kami input,
+#komentar {
+  outline: none;
+  padding: 10px;
+  border: 2px solid #0076ff;
+  border-radius: 10px;
+  background: #0076ff;
+  color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.2);
+}
+
+.kontak-kami input::placeholder {
+  color: white;
+}
+
+.kontak-kami input.kirim {
+  cursor: pointer;
+  margin-left: 425px;
+}
+
+.kontak-kami form fieldset ul {
+  list-style: none;
+}
+
+.about-me img {
+  width: 70%;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.gallery,
+.youtube-video {
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.container-album {
+  width: 600px;
+  line-height: 0;
+  margin: 20px auto;
+  border: 5px solid #0076ff;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 200px;
+  float: left;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.thumbnail:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* Config css youtube video */
+.ampar-jawa {
+  text-align: center;
+}
+
+.ampar-jawa h2,
+.about-me h2,
+.gallery h2 {
+  color: #0076ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+/* end config */
+
+/* Animasi keyframes gallery */
+@keyframes bayang {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-out {
+  opacity: 0;
+  animation: bayang 0.5s forwards;
+}
+
+.aktif {
+  opacity: 0.5;
+}
+
+/* Animas end config */
+
+.container-foot {
+  max-width: 1200px;
+  margin: 10px auto;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  cursor: default;
+}
+
+/* Menu animasi */
+.klik-menu span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.klik-menu span:last-child {
+  transform-origin: 0 100%;
+}
+
+.klik-menu input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.klik-menu input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+.klik-menu input:checked ~ span:last-child {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* media responsive */
+@media screen and (min-width: 513px) {
+  .container-mid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .nav-bar {
+    display: flex;
+    width: 100%;
+  }
+
+  .container-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    width: 30%;
+  }
+
+  .about-me {
+    width: 30%;
+  }
+
+  #perkenalan p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Responsive covering */
+/* @media screen and (max-width: 768px) {
+  .nav-bar ul {
+    width: 70%;
+  }
+} */
+
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    margin-top: 50px;
+    padding-top: 80px;
+  }
+
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+
+  .jumbotron p {
+    font-size: 14px;
+  }
+
+  .content.pertama h3,
+  .content.kedua h3,
+  .content.ketiga h3,
+  .content.keempat h3,
+  .content.kelima h3,
+  .content.keenam h3 {
+    text-align: center;
+    color: #0076ff;
+  }
+
+  .content.pertama img,
+  .content.kedua img,
+  .content.ketiga img,
+  .content.keempat img,
+  .content.kelima img,
+  .content.keenam img {
+    width: 100px;
+    margin-left: 125px;
+  }
+
+  .nav-bar {
+    margin-top: -430px;
+    padding-bottom: 340px;
+  }
+  .nav-bar ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgb(144, 243, 205);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+
+  .nav-bar ul.geser {
+    transform: translateX(0);
+    width: 30%;
+  }
+
+  .nav-bar ul li a {
+    color: black;
+    font-weight: bold;
+  }
+
+  .klik-menu {
+    display: flex;
+  }
+
+  .klik-menu input {
+    z-index: 2;
+  }
+
+  #perkenalan p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .kontak-kami ul {
+    margin-left: 10px;
+  }
+
+  #email {
+    margin-left: 70px;
+  }
+
+  #komentar {
+    margin-left: 69px;
+  }
+  .kontak-kami input.kirim {
+    margin-left: 136px;
+  }
+  .container-album {
+    width: 350px;
+    line-height: 0;
+    margin: 20px auto;
+    border: 5px solid #0076ff;
+    overflow: hidden;
+    object-fit: center;
+  }
+
+  .thumbnail {
+    width: 87px;
+    float: left;
+    border: 2px solid black;
+    box-sizing: border-box;
+  }
+
+  .thumbnail:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .ampar-jawa iframe {
+    text-align: center;
+    width: 350px;
+  }
+}
